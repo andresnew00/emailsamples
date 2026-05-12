@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roots & Wings — Email Sequence</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0ece4;
+    color: #1c1c1c;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .page-header .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8a7e6e;
+    margin-bottom: 10px;
+  }
+  .page-header h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(22px, 4vw, 36px);
+    color: #1c1c1c;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .page-header p {
+    font-size: 14px;
+    color: #7a7068;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .emails-grid {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .email-wrap {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+  }
+
+  /* Top label bar */
+  .email-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: #1c1c1c;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .email-label .e-num {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c0a96a;
+    font-weight: 500;
+  }
+  .email-label .e-day {
+    font-size: 11px;
+    color: #7a7068;
+    letter-spacing: 1px;
+  }
+
+  /* Email meta (subject, preview, from) */
+  .email-meta {
+    padding: 16px 28px;
+    background: #f7f4ef;
+    border-bottom: 1px solid #e8e2d8;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .email-meta .meta-row {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.45;
+  }
+  .email-meta .meta-row strong {
+    color: #1c1c1c;
+    font-weight: 600;
+  }
+  .email-meta .subject-line {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 2px;
+  }
+
+  /* Body */
+  .email-body {
+    padding: 28px 28px 32px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2a2a2a;
+  }
+  .email-body p {
+    margin-bottom: 16px;
+  }
+  .email-body p:last-child {
+    margin-bottom: 0;
+  }
+  .email-body .ps {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #ece7df;
+    font-size: 13.5px;
+    color: #6b6560;
+    font-style: italic;
+  }
+  .email-body .cta-btn {
+    display: inline-block;
+    margin: 4px 0 8px;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  /* Divider line between emails */
+  .email-label .e-purpose {
+    width: 100%;
+    font-size: 11px;
+    color: #7a7068;
+    font-style: italic;
+    padding-top: 2px;
+  }
+
+  /* Footer */
+  .page-footer {
+    text-align: center;
+    margin-top: 52px;
+    font-size: 12px;
+    color: #9a9087;
+    letter-spacing: 0.5px;
+  }
+  .page-footer span {
+    color: #c0a96a;
+  }
+
+  @media (max-width: 520px) {
+    .email-body { padding: 20px; font-size: 14.5px; }
+    .email-meta { padding: 14px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="eyebrow">Read &amp; Feel</div>
+  <h1>The 5-Email Sequence</h1>
+  <p>These emails go to someone who just signed up for a nonprofit's list. Notice when the ask shows up — and how you feel when it does.</p>
+</div>
+
+<div class="emails-grid">
+
+  <!-- EMAIL 1 -->
+  <div class="email-wrap">
+    <div class="email-label">
+      <span class="e-num">Email 1 of 5</span>
+      <span class="e-day">Sent: Day 1 (right after signup)</span>
+      <span class="e-purpose">Welcome. No ask. Just a real voice saying hello.</span>
+    </div>
+    <div class="email-meta">
+      <div class="subject-line">🌱 You just did something good (here's what happens next)</div>
+      <div class="meta-row"><strong>From:</strong> Maria at Roots &amp; Wings</div>
+      <div class="meta-row"><strong>Preview:</strong> I want to tell you why I showed up at 6am on a Tuesday...</div>
+    </div>
+    <div class="email-body">
+      <p>Hi there,</p>
+      <p>My name is Maria. I'm a volunteer with Roots &amp; Wings, and I'm the one who writes these emails.</p>
+      <p>I am not a marketing person. I am a former social worker who showed up one Tuesday morning to sort donated furniture and never really left.</p>
+      <p>That morning, a 19-year-old named DeShawn helped me carry a couch up three flights of stairs. He had just moved into his first apartment. His first ever. He kept stopping on the landing to catch his breath, and every time he stopped, he looked around like he was making sure it was all real.</p>
+      <p>That's the moment I understood what Roots &amp; Wings actually does. It's not job training or housing assistance or life skills coaching, though it's all of that. It's giving a kid a couch to carry.</p>
+      <p>Here's what you can expect from me over the next few weeks:</p>
+      <p>I'll tell you a few stories. I'll ask one small thing of you. And then, when the time feels right, I'll tell you how you can become part of this for real.</p>
+      <p>No pressure. No guilt. Just some honest emails from a volunteer who cares way too much.</p>
+      <p>Talk soon,<br>Maria<br>Volunteer, Roots &amp; Wings</p>
+      <p class="ps">P.S. Hit reply and tell me one thing: how did you hear about us? I read every single one.</p>
+    </div>
+  </div>
+
+  <!-- EMAIL 2 -->
+  <div class="email-wrap">
+    <div class="email-label">
+      <span class="e-num">Email 2 of 5</span>
+      <span class="e-day">Sent: Day 3</span>
+      <span class="e-purpose">One real story. Emotion, not information. Still no ask.</span>
+    </div>
+    <div class="email-meta">
+      <div class="subject-line">🌱 She had one bag. That was everything she owned.</div>
+      <div class="meta-row"><strong>From:</strong> Maria at Roots &amp; Wings</div>
+      <div class="meta-row"><strong>Preview:</strong> I kept thinking about it on the drive home...</div>
+    </div>
+    <div class="email-body">
+      <p>I was standing in our intake room last spring when Jasmine walked in.</p>
+      <p>She was 20 years old. She had one backpack. And when I say one backpack, I mean that was it. That was the total of what she owned in the world.</p>
+      <p>Jasmine had aged out of foster care six months earlier. In Florida, when you turn 18, the system stops. The caseworker stops calling. The check stops coming. The house you were living in stops being yours.</p>
+      <p>Six months on her own, she had already lost an apartment, stayed on four different couches, and turned down a job offer because she had nothing clean to wear to the interview.</p>
+      <p>She sat across from our case manager Danielle and said, with no drama in her voice at all: "I just don't want to be outside when it gets cold again."</p>
+      <p>Eighteen months later, Jasmine manages the front desk at a physical therapy office. She has a one-bedroom apartment. She got a cat. She named him Mango.</p>
+      <p>That path, from one backpack to Mango, happened because of the people who fund Roots &amp; Wings. Donors made every step of that possible.</p>
+      <p>I think about Jasmine a lot. I think you will too.</p>
+      <p>Maria</p>
+      <p class="ps">P.S. In my next email, I want to show you one easy way to help that has nothing to do with money. Keep an eye out.</p>
+    </div>
+  </div>
+
+  <!-- EMAIL 3 -->
+  <div class="email-wrap">
+    <div class="email-label">
+      <span class="e-num">Email 3 of 5</span>
+      <span class="e-day">Sent: Day 6</span>
+      <span class="e-purpose">A tiny ask. No money. Build the habit of saying yes.</span>
+    </div>
+    <div class="email-meta">
+      <div class="subject-line">🌱 Can you do one thing for me today? (Takes 30 seconds)</div>
+      <div class="meta-row"><strong>From:</strong> Maria at Roots &amp; Wings</div>
+      <div class="meta-row"><strong>Preview:</strong> No donation needed. I promise.</div>
+    </div>
+    <div class="email-body">
+      <p>Hey,</p>
+      <p>I've been thinking about you since my last email.</p>
+      <p>A lot of people reply to me after the Jasmine story. Some people share it with their families. A few people have told me it made them cry at their desk.</p>
+      <p>If that was you: good. That means you're paying attention. And paying attention is where everything starts.</p>
+      <p>Today I want to ask one small thing. Not for money. Just for a minute of your time.</p>
+      <p>Follow Roots &amp; Wings on Instagram.</p>
+      <p>That's it. We post updates from the young adults in our program: their first apartments, their first jobs, their small and massive wins. It's the most honest feed you'll find.</p>
+      <p>When you follow us, you stay connected to the story. And staying connected is what eventually turns into something bigger for everyone.</p>
+      <p>Follow us here: <strong>@rootsandwingsfl</strong></p>
+      <p>I'll be back in a few days. I have something I want to share with you late at night. It's a story I don't tell in our newsletter. I only tell it to people like you.</p>
+      <p>Maria</p>
+      <p class="ps">P.S. If you know someone who works with youth or social services, forward them my last email. They'll get it.</p>
+    </div>
+  </div>
+
+  <!-- EMAIL 4 -->
+  <div class="email-wrap">
+    <div class="email-label">
+      <span class="e-num">Email 4 of 5</span>
+      <span class="e-day">Sent: Day 10 (late night)</span>
+      <span class="e-purpose">The biggest story. Written like a personal late-night message. Soft tease for the ask.</span>
+    </div>
+    <div class="email-meta">
+      <div class="subject-line">🌱 I was up at 2am thinking about this (sorry in advance)</div>
+      <div class="meta-row"><strong>From:</strong> Maria at Roots &amp; Wings</div>
+      <div class="meta-row"><strong>Preview:</strong> I don't usually send emails this late but I couldn't stop thinking...</div>
+    </div>
+    <div class="email-body">
+      <p>It's late. I should be asleep.</p>
+      <p>But I keep thinking about Marcus, and once I start thinking about Marcus I can't stop until I've told someone.</p>
+      <p>Marcus came to us at 21. He had spent three years cycling in and out of the shelter system after aging out of care at 18. He had a GED. He had a phone with a cracked screen he'd found in a parking lot. And he had a daughter, seven months old, that he was determined to be there for.</p>
+      <p>He told our director on his first day: "I'm not doing this for me. I already survived the hard part. I'm doing this so she doesn't have a story like mine."</p>
+      <p>We got Marcus into transitional housing. We connected him with a workforce training program. We helped him get his driver's license back.</p>
+      <p>Fourteen months later, Marcus walked across a stage at a community college and got his associate's degree. His daughter was in the front row in a little yellow dress. She was 22 months old and she screamed "DADA" so loud the whole auditorium laughed.</p>
+      <p>I was there. I cried so hard one of the staff members brought me a box of tissues and patted my arm.</p>
+      <p>I think about that little girl in the yellow dress every time I wonder if this work matters.</p>
+      <p>It matters.</p>
+      <p>In my next email, I want to tell you about the community we're building here and how you can be part of it. I think you're ready to hear it.</p>
+      <p>Goodnight,<br>Maria<br>Volunteer, Roots &amp; Wings</p>
+      <p class="ps">P.S. If Marcus's story hit you the way it hits me every time: hold on to that feeling. My next email is for people who want to turn that feeling into something real.</p>
+    </div>
+  </div>
+
+  <!-- EMAIL 5 -->
+  <div class="email-wrap">
+    <div class="email-label">
+      <span class="e-num">Email 5 of 5</span>
+      <span class="e-day">Sent: Day 15</span>
+      <span class="e-purpose">The ask. Earned. Notice how different it feels now.</span>
+    </div>
+    <div class="email-meta">
+      <div class="subject-line">🌱 Can I ask you something?</div>
+      <div class="meta-row"><strong>From:</strong> Maria at Roots &amp; Wings</div>
+      <div class="meta-row"><strong>Preview:</strong> You've been here for two weeks. You already care more than most people ever will.</div>
+    </div>
+    <div class="email-body">
+      <p>You've been getting my emails for two weeks now.</p>
+      <p>You heard about DeShawn and his couch. You met Jasmine and Mango. You were up late with me thinking about Marcus and his daughter in the yellow dress.</p>
+      <p>That means you're not a stranger to this work anymore. You know what it looks like. You know what it costs, not in money but in effort and showing up and caring.</p>
+      <p>So here's my ask.</p>
+      <p>Roots &amp; Wings is building something called the Roots Circle: a community of monthly donors who make this work sustainable. Not just possible for a few people. Sustainable for hundreds.</p>
+      <p>For $25 a month, roughly what most people spend on two restaurant lunches, you fund one month of case management for a young adult like Jasmine or Marcus.</p>
+      <p>You don't just write a check and wonder what happened. Roots Circle members get a monthly update from me, real stories, real names, real outcomes. You see exactly where your money went.</p>
+      <p>Every month we go without a new recurring donor, there's a waitlist of young adults we can't serve yet. That waitlist has real names on it right now.</p>
+      <p>If what you've read over the past two weeks has moved you, this is the next step.</p>
+      <p><a class="cta-btn" href="#">Join the Roots Circle — $25/month</a></p>
+      <p>If you're not ready, that's okay. I'll keep writing. But if you are ready, I would love to welcome you in.</p>
+      <p>With so much gratitude,<br>Maria<br>Volunteer, Roots &amp; Wings</p>
+      <p class="ps">P.S. If $25 feels like too much right now, $10 a month still changes what we can do. Whatever your version of yes looks like, that's the right amount.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="page-footer">
+  Roots &amp; Wings is a fictional nonprofit used for illustration. <span>•</span> The sequence structure is real.
+</div>
+
+</body>
+</html>
